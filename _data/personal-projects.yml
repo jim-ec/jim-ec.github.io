@@ -32,7 +32,7 @@
     the maximum precision is reached rather quickly, yielding visual artifacts.
 
 - title: JavaScript Mini IDE
-  github: javascriptshell
+  github: javascript-mini-ide
   video: assets/JavaScript-Shell.mp4
   image: assets/JavaScript-Shell-Logo.png
   description:
