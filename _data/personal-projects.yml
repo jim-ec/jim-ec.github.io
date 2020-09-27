@@ -1,0 +1,51 @@
+- title: 4D Geometry Rendering
+  github: pentachoron
+  video: assets/Pentachoron.mp4
+  description:
+    An interactive mobile app to experience four-dimensional geometry.
+    It's viewport displays a three-dimensional slice of a four-simplex, five-cell, or a so called Pentachoron.
+    A Pentachoron relates to a tetrahedron in the same way a tetrahedron relates to a triangle
+    by adding one further vertex in the next spatial dimension.
+
+    The current slice can be dragged, resulting in a morph-like effect.
+    In addition, the geometry itself can be rotated on the XW plane.
+
+    I used Flutter as the app's backend. Since Flutter did not provide a 3d API at that time (does it now?),
+    the 3d rendition is actually perspectivley projected into 2d space, and then drawn using the standard API calls
+    of Flutter's 2d canvas.
+
+- title: Mandelbrot fractals
+  github: fractals
+  video: assets/Vulkan-Fractals.mp4
+  description:
+    The classical fractal rendering demo, done with the Vulkan graphics API.
+
+    The fractal renderer interprets each pixel's location as a complex number and computes a defined series for it.
+    After a finite numbers of iterations, the series computation is interrupted.
+    If the absolute value of the resulting complex number is smaller than 2,
+    then the series numerically converged and the current complex number is considered to be a part of the Mandelbrot.
+    It is colored black in the viewport.
+    Increasing the number of iterations leads to greater geometrical details.
+    The count of steps after which a value falls outside the Mandelbrot set can be color coded.
+
+    Since the renderer is based on 32 bit single-precision floating points, and zooming in at an exponential speed,
+    the maximum precision is reached rather quickly, yielding visual artifacts.
+
+- title: JavaScript Mini IDE
+  github: javascriptshell
+  video: assets/JavaScript-Shell.mp4
+  image: assets/JavaScript-Shell-Logo.png
+  description:
+    A mobile app for editing and running JavaScript code.
+
+    The code parser is implemented in C++ and communicates to Java through the JNI.
+    It finds the text positions of the highlights to be made, while the Java code decorates the text with text spans at the right spots.
+    The code editor view is a subclass of EditText, but with the virtual keyboard disabled,
+    since I made a completely custom one from scratch to better incorporate special symbols.
+
+    V8, a JavaScript engine from Google, is used the run scripts.
+    Some functions like printing or sleeping are predefined and execute Java code when called from JavaScript.
+    To store user scripts, I implemented a file manager, saving the user's work on disk.
+    The UI includes a list of available files and examples.
+
+    The whole project consists of ~40 Java classes and C++ files, ~2800 lines of code.

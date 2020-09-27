@@ -1,0 +1,179 @@
+---
+---
+
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Jim Eckerlein</title>
+
+    <!-- Favicon -->
+    <link rel="apple-touch-icon" sizes="180x180" href="/favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon/favicon-16x16.png">
+    <link rel="manifest" href="/favicon/site.webmanifest">
+    <link rel="mask-icon" href="/favicon/safari-pinned-tab.svg" color="#5bbad5">
+    <link rel="shortcut icon" href="/favicon/favicon.ico">
+    <meta name="msapplication-TileColor" content="#da532c">
+    <meta name="msapplication-config" content="/favicon/browserconfig.xml">
+    <meta name="theme-color" content="#ffffff">
+
+    <!-- SEO -->
+    <meta name="author" content="Jim Eckerlein"/>
+    <meta name="keywords" content="Jim Eckerlein, Portfolio, Programmer"/>
+    <meta name="description" content="Programmer with crazy for C++ and computer graphics rendering. Currently studying Computer Science at the Technical University of Munich."/>
+
+    <!-- Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700;900&family=Noto+Sans:wght@400;700&display=swap" rel="stylesheet">
+
+    <!-- Styles -->
+    <link rel="stylesheet" type="text/css" href="style.css"/>
+
+</head>
+
+<body>
+    <!-- Introduction -->
+    <article class="portfolio--container">
+
+        <!-- Round profile picture -->
+        <img class="portfolio--picture" src="assets/profile-picture.png" alt="Portfolio Picture">
+
+        <div>
+
+            <!-- Jim Eckerlein -->
+            <h1>
+                <span class="portfolio--first-name">Jim</span>&#8203;
+                <span class="portfolio--surname">Eckerlein</span>
+            </h1>
+
+            <!-- Links -->
+            <div class="portfolio--subtitle-links">
+                <a href="CV.pdf">CV</a>
+                //
+                <a href="https://www.linkedin.com/in/jim-eckerlein">LinkedIn</a>
+                //
+                <a href="https://github.com/Jim-Eckerlein">GitHub</a>
+            </div>
+
+            <img class="portfolio--email-image" src="assets/contact.svg" alt="Contact data">
+
+            <p class="portfolio--introductory-text">
+                {{site.data.introduction}}
+            </p>
+
+        </div>
+
+    </article>
+
+    <!-- Work experience -->
+
+    <div class="divider"></div>
+
+    <article>
+
+        <h2>Work Experience</h2>
+
+        {% for workExperience in site.data.work-experience %}
+
+        <!-- Position, Employer, Duration -->
+        <p>
+            <span class="work-experience--employer">{{workExperience.employer}}</span>
+            <span class="work-experience--duration">{{workExperience.duration}}</span>
+            <br>
+            <span class="work-experience--position">{{workExperience.position}}</span>
+        </p>
+
+        <!-- Text -->
+        <p>{{workExperience.text}}</p>
+
+        <!-- Reference -->
+        {% if workExperience.reference %}
+        <a href="references/{{workExperience.reference}}">Reference</a>
+        {% endif %}
+
+        <div class="spacer"></div>
+
+        {% endfor %}
+
+    </article>
+
+    <!-- Education -->
+
+    <div class="divider"></div>
+
+    <article>
+
+        <h2>Education</h2>
+
+        {% for education in site.data.education %}
+
+        <!-- Title, Duration -->
+        <p>
+            <span class="education--institution">{{education.title}}</span>
+            <span class="education--duration">{{education.duration}}</span>
+            <br>
+            <span class="education--major">{{education.major}}</span>
+        </p>
+
+        <!-- Courses -->
+        {% if education.courses %}
+        <b>Courses: </b>
+        <ul>
+            {% for course in education.courses %}
+                <li> {{course}} </li>
+            {% endfor %}
+        </ul>
+        {% endif %}
+
+        <div class="spacer"></div>
+
+        {% endfor %}
+    </article>
+
+    <!-- Personal projects -->
+
+    <div class="divider"></div>
+
+    <article>
+
+        <h2>Personal Projects</h2>
+
+        {% for project in site.data.personal-projects %}
+
+        <!-- Title -->
+        <h3>{{project.title}}</h3>
+
+        <!-- Image -->
+        {% if project.image %}
+        <img class="personal-project--image" src="{{project.image}}"/>
+        {% endif %}
+
+        <!-- Description -->
+        <p class="large-paragraph">
+            {{project.description}}
+        </p>
+
+        <!-- Source code link -->
+        <a class="button" href="https://github.com/Jim-Eckerlein/{{project.github}}" target="_blank">
+            Source Code
+        </a>
+
+        <!-- Videos -->
+        {% if project.video %}
+        <video controls>
+            <source src="{{project.video}}" type="video/mp4">
+        </video>
+        {% endif %}
+
+        <div class="spacer"></div>
+
+        {% endfor %}
+
+    </article>
+
+    <footer>
+        <p>© 2020 {{site.data.profile.name}} &middot; Munich, Germany</p>
+    </footer>
+</body>
+</html>

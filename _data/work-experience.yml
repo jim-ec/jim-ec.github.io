@@ -1,0 +1,29 @@
+- employer: UX3D GmbH
+  position: GPU Software Engineer
+  duration: since Jan 2019
+  text:
+    Development on <a href="https://gestaltor.io">Gestaltor</a>, the company's product, using <u>Qt</u> and <u>C++</u>.<br/>
+    Engine and middleware development in <u>C++</u> using <u>OpenGL</u> and <u>Vulkan</u>.<br/>
+    Extending the <a href="https://github.com/KhronosGroup/glTF-Blender-IO">Blender glTF Exporter</a> to support <u>Draco</u> mesh compression.<br/>
+
+- employer: mbs Electronic Systems GmbH
+  position: Software Developer
+  duration: Jun 2017 - Dec 2018
+  text:
+    Implementation of a <u>Qt</u> PDF rendering widget using the Poppler library, targeting an embedded device.
+    The widget has been developed in <u>C++</u> and <u>Qt Quick</u>.
+  reference: mbs-Electronics-GmbH.pdf
+
+- employer: ESR Labs
+  position: Trainee
+  duration: Sep 2015 – Jul 2016
+  text:
+    Implementation of CAN message sender and receiver in <u>C++</u>.
+    The transmitter ran on custom Arduino hardware which I have assembled.
+  reference: ESRLabs.pdf
+
+- employer: CERN
+  position: Workshop
+  duration: Apr 2016
+  text: Participation in student workshop at CERN.
+  reference: Workshop_Cern_-_Confirmation_of_Participation.pdf

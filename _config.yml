@@ -1,0 +1,8 @@
+exclude: ["Gemfile.lock", "Gemfile"]
+defaults:
+    -
+        scope:
+            path: ""
+        values:
+            title: "Jim Eckerlein"
+            author: "Jim Eckerlein"
