@@ -22,9 +22,3 @@
     Implementation of CAN message sender and receiver in <u>C++</u>.
     The transmitter ran on custom Arduino hardware which I have assembled.
   reference: ESRLabs.pdf
-
-- employer: CERN
-  position: Workshop
-  duration: Apr 2016
-  text: Participation in student workshop at CERN.
-  reference: Workshop_Cern_-_Confirmation_of_Participation.pdf

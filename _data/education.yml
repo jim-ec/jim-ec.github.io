@@ -1,8 +1,16 @@
 - title: Technical University, Munich
+  duration: since Oct 2018
   major: Computer Science B.S.
   courses:
     - Computer Science, Programming, Computer Architecture (Assembly)
     - Discrete Structures, Analysis, Linear Algebra, Numerical prog.
     - Functional prog. (with Haskell), Algorithms and Data Structures
-  duration: since Oct 2018
   
+- title: CERN, Geneva
+  duration: Apr 2016
+  major: Workshop
+  text:
+    Participation in student workshop at CERN.
+    Conducting various experiments in the field of particle physics, talking to various professors and listening to lectures.
+    Last but not least, a guided tour through the CERN as well as the old town of Geneva.
+  reference: Workshop_Cern_-_Confirmation_of_Participation.pdf

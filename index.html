@@ -116,6 +116,16 @@
             <span class="education--major">{{education.major}}</span>
         </p>
 
+        <!-- Text -->
+        {% if education.text %}
+        <p>{{education.text}}</p>
+        {% endif %}
+
+        <!-- Reference -->
+        {% if education.reference %}
+        <a href="references/{{education.reference}}">Reference</a>
+        {% endif %}
+
         <!-- Courses -->
         {% if education.courses %}
         <b>Courses: </b>
