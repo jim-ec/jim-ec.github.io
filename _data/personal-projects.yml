@@ -31,7 +31,7 @@
     Since the renderer is based on 32 bit single-precision floating points, and zooming in at an exponential speed,
     the maximum precision is reached rather quickly, yielding visual artifacts.
 
-- title: JavaScript Mini IDE
+- title: JavaScript mini IDE
   github: javascript-mini-ide
   video: assets/JavaScript-Shell.mp4
   image: assets/JavaScript-Shell-Logo.png
