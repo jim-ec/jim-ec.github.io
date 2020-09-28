@@ -4,6 +4,7 @@
   text:
     Development on <a href="https://gestaltor.io">Gestaltor</a>, the company's product, using <u>Qt</u> and <u>C++</u>.<br/>
     Engine and middleware development in <u>C++</u> using <u>OpenGL</u> and <u>Vulkan</u>.<br/>
+    Contribution to the <a href="https://github.com/KhronosGroup/glTF-Sample-Viewer">glTF Sample Viewer</a>
     Extending the <a href="https://github.com/KhronosGroup/glTF-Blender-IO">Blender glTF Exporter</a> to support <u>Draco</u> mesh compression.<br/>
 
 - employer: mbs Electronic Systems GmbH
