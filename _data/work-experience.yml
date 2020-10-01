@@ -19,6 +19,6 @@
   position: Trainee
   duration: Sep 2015 – Jul 2016
   text:
-    Implementation of CAN message sender and receiver in <u>C++</u>.
+    Implementation of a CAN message sender and receiver in <u>C++</u>.
     The transmitter ran on custom Arduino hardware which I have assembled.
   reference: ESRLabs.pdf
