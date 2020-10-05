@@ -126,13 +126,13 @@ footer {
     font-weight: bold;
 }
 
-.skills--listing-entry:not(:first-child)::before {
+.skills--listing-entry:not(:last-child)::after {
     content: ", ";
     font-weight: normal;
     color: var(--text-color);
 }
 
-.skills--listing-entry:last-child::before {
+.skills--listing-entry:nth-last-child(2)::after {
     content: ", and ";
 }
 
