@@ -66,6 +66,39 @@
 
     </article>
 
+    <article>
+        <h3>Skills</h3>
+
+        <p>
+            <span class="skills--definition">Software skills proficient:</span>
+            <br/>
+            <span class="skills--proficient">
+                {% for skill in site.data.skills.proficient %}
+                <span class="skills--listing-entry">{{skill}}</span>
+                {% endfor %}
+            </span>
+            <br/>
+
+            <span class="skills--definition">Software skills familiar:</span>
+            <br/>
+            <span>
+                {% for skill in site.data.skills.familiar %}
+                <span class="skills--listing-entry">{{skill}}</span>
+                {% endfor %}
+            </span>
+            <br/>
+
+            <span class="skills--definition">Languages:</span>
+            <br/>
+            <span>
+                {% for language in site.data.skills.languages %}
+                <span class="skills--listing-entry">{{language}}</span>
+                {% endfor %}
+            </span>
+            <br/>
+        </p>
+    </article>
+
     <!-- Work experience -->
 
     <div class="divider"></div>

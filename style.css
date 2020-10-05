@@ -3,6 +3,8 @@
     --accent-color: #b6c71a;
     --accent-color-darker: #7f8b0e;
     --accent-color-secondary: rgb(0, 119, 255);
+    --text-color: rgb(19, 19, 19);
+    --background-color:  rgb(240, 240, 240);
 }
 
 html {
@@ -13,8 +15,8 @@ html {
 body {
     margin: 0;
     padding: 32px 0 0 0;
-    background-color: rgb(240, 240, 240);
-    color: rgb(19, 19, 19);
+    background-color: var(--background-color)
+    color: var(--text-color)
 }
 
 /* Custom font */
@@ -108,6 +110,30 @@ footer {
     height: 64px;
     width: 100%;
     padding: 0;
+}
+
+.skills--definition {
+    font-size: 0.8em;
+    opacity: 0.6;
+}
+
+.skills--listing-entry {
+    font-weight: bold;
+}
+
+.skills--proficient .skills--listing-entry {
+    color: var(--accent-color);
+    font-weight: bold;
+}
+
+.skills--listing-entry:not(:first-child)::before {
+    content: ", ";
+    font-weight: normal;
+    color: var(--text-color);
+}
+
+.skills--listing-entry:last-child::before {
+    content: ", and ";
 }
 
 .portfolio--container {
