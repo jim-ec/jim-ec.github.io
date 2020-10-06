@@ -203,6 +203,12 @@ footer {
     float: left;
 }
 
+@media screen and (max-width: 950px) {
+    article {
+        padding: 0 10%;
+    }
+}
+
 @media screen and (max-width: 700px) {
     body {
         padding: 0;
@@ -215,12 +221,12 @@ footer {
     h1 {
         font-size: 56px;
     }
-    
+
     h2 {
         font-size: 40px;
         margin: 16px 0;
     }
-    
+
     h3 {
         font-size: 30px;
     }
@@ -228,7 +234,7 @@ footer {
     .spacer {
         height: 32px;
     }
-    
+
     .portfolio--container {
         display: block;
         text-align: center;
@@ -237,7 +243,7 @@ footer {
     .portfolio--picture {
         padding: 16px 0;
     }
-    
+
     .work-experience--employer {
         font-size: 1.2em;
     }
