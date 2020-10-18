@@ -4,7 +4,7 @@
     --accent-color-darker: #7f8b0e;
     --accent-color-secondary: rgb(0, 119, 255);
     --text-color: rgb(19, 19, 19);
-    --background-color:  rgb(240, 240, 240);
+    --background-color:  rgb(255, 255, 255);
 }
 
 html {
@@ -15,7 +15,7 @@ html {
 body {
     margin: 0;
     padding: 32px 0 0 0;
-    background-color: var(--background-color)
+    background-color: var(--background-color);
     color: var(--text-color)
 }
 
