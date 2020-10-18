@@ -97,30 +97,30 @@
         </p>
     </article>
 
-    <!-- Work experience -->
+    <!-- Experience -->
 
     <div class="divider"></div>
 
     <article>
 
-        <h2>Work Experience</h2>
+        <h2>Experience</h2>
 
-        {% for workExperience in site.data.work-experience %}
+        {% for experience in site.data.experience %}
 
         <!-- Position, Employer, Duration -->
         <p>
-            <span class="work-experience--employer">{{workExperience.employer}}</span>
-            <span class="work-experience--duration">{{workExperience.duration}}</span>
+            <span class="experience--employer">{{experience.employer}}</span>
+            <span class="experience--duration">{{experience.duration}}</span>
             <br>
-            <span class="work-experience--position">{{workExperience.position}}</span>
+            <span class="experience--position">{{experience.position}}</span>
         </p>
 
         <!-- Text -->
-        <p>{{workExperience.text}}</p>
+        <p>{{experience.text}}</p>
 
         <!-- Reference -->
-        {% if workExperience.reference %}
-        <a href="references/{{workExperience.reference}}">Reference</a>
+        {% if experience.reference %}
+        <a href="references/{{experience.reference}}">Reference</a>
         {% endif %}
 
         <div class="spacer"></div>

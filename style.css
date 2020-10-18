@@ -171,16 +171,16 @@ footer {
     margin-top: 32px;
 }
 
-.work-experience--employer {
+.experience--employer {
     color: var(--accent-color);
     font-size: 1.5em;
 }
 
-.work-experience--duration {
+.experience--duration {
     opacity: 0.6;
 }
 
-.work-experience--position {
+.experience--position {
     font-weight: bold;
 }
 
@@ -244,11 +244,11 @@ footer {
         padding: 16px 0;
     }
 
-    .work-experience--employer {
+    .experience--employer {
         font-size: 1.2em;
     }
 
-    .work-experience--duration {
+    .experience--duration {
         opacity: 0.6;
         font-size: 0.9em;
     }
