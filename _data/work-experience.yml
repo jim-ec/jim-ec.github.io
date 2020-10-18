@@ -1,4 +1,4 @@
-- employer: UX3D GmbH
+- employer: UX3D
   position: GPU Software Engineer
   duration: January 2019 — Present
   text:
@@ -7,7 +7,7 @@
     Contribution to the <a href="https://github.com/KhronosGroup/glTF-Sample-Viewer">glTF Sample Viewer</a>
     Extending the <a href="https://github.com/KhronosGroup/glTF-Blender-IO">Blender glTF Exporter</a> to support <u>Draco</u> mesh compression.<br/>
 
-- employer: mbs Electronic Systems GmbH
+- employer: mbs Electronic Systems
   position: Software Developer
   duration: June 2017 — December 2018
   text:
