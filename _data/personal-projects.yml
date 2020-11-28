@@ -8,7 +8,7 @@
     The current slice can be dragged, resulting in a morph-like effect.
     In addition, the 4-simplex can be rotated on the X-W plane.
 
-    I used Flutter as the app's backend. Since Flutter did not provide a 3d API at that time,
+    I used Flutter as the app's back-end. Since Flutter did not provide a 3d API at that time,
     the 3-D rendition is actually perspectivley projected into 2-D space, and then drawn using the standard API calls
     of Flutter's 2-D canvas.
 

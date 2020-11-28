@@ -19,18 +19,17 @@ body {
     color: var(--text-color)
 }
 
-/* Custom font */
 div, button, h1, h2, h3, h4, h5, h6 {
     font-family: 'Lato', 'Arial', sans-serif;
 }
 
 p, li, a, b, i {
-    font-family: 'Noto Sans', 'Arial', sans-serif;
+    font-family: 'Fira Sans', 'Arial', sans-serif;
 }
 
-/* Greater line height for better readability */
 p, li {
-    line-height: 1.8;
+    line-height: 2.0;
+    font-weight: 300;
 }
 
 a {
@@ -40,7 +39,7 @@ a {
 article {
     display: block;
     width: 100%;
-    padding: 0 20%;
+    padding: 0 16%;
     box-sizing: border-box;
 }
 
@@ -100,7 +99,7 @@ footer {
 }
 
 .large-paragraph {
-    text-align: justify;
+    text-align: left;
 }
 
 .divider {
@@ -198,6 +197,10 @@ footer {
 
     video {
         max-height: 256px;
+    }
+
+    p, li {
+        line-height: 1.8;
     }
 
     footer {
