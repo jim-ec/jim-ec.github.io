@@ -123,8 +123,9 @@ footer {
 }
 
 .portfolio--picture {
-    width: min(180px, 20%);
+    width: min(140px, 20%);
     height: auto;
+    padding-top: 16px;
     padding-right: 64px;
 }
 
