@@ -1,10 +1,10 @@
 
 :root {
-    --accent-color: #b6c71a;
-    --accent-color-darker: #7f8b0e;
-    --accent-color-secondary: rgb(0, 119, 255);
-    --text-color: rgb(19, 19, 19);
-    --background-color:  rgb(255, 255, 255);
+    --accent-color: #53e4c0;
+    --accent-color-secondary: #bff8ea;
+    --accent-color-link: rgb(129, 188, 255);
+    --text-color:  rgb(176, 176, 187);
+    --background-color: rgb(41, 42, 45);
 }
 
 html {
@@ -34,7 +34,7 @@ p, li {
 }
 
 a {
-    color: var(--accent-color-secondary);
+    color: var(--accent-color-link);
 }
 
 article {
@@ -61,6 +61,7 @@ h2 {
     font-weight: 300;
     text-transform: uppercase;
     margin-bottom: 64px;
+    color: var(--accent-color-secondary)
 }
 
 h3 {
@@ -81,8 +82,6 @@ video {
 }
 
 footer {
-    background-color: #333;
-    color: #fff;
     padding: 16px;
 }
 
@@ -90,7 +89,7 @@ footer {
     display: inline-block;
     font-size: 16px;
     text-decoration: none;
-    border: 1px solid var(--accent-color-secondary);
+    border: 1px solid var(--accent-color-link);
     padding: 4px 16px;
     margin: 8px;
     border-radius: 32px;
@@ -127,7 +126,7 @@ footer {
 
 .portfolio--first-name {
     font-weight: bold;
-    color: var(--accent-color-darker);
+    color: var(--accent-color-secondary);
 }
 
 .portfolio--surname {
