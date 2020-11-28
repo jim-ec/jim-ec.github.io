@@ -25,7 +25,7 @@
     <meta name="description" content="Programmer with crazy for C++ and computer graphics rendering. Currently studying Computer Science at the Technical University of Munich."/>
 
     <!-- Fonts -->
-    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700;900&family=Noto+Sans:wght@400;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700;900&family=Noto+Sans:wght@400;700&display=swap" rel="stylesheet">
 
     <!-- Styles -->
     <link rel="stylesheet" type="text/css" href="style.css"/>
@@ -70,42 +70,44 @@
 
     <div class="divider"></div>
 
-    <article>
+    <h2>&mdash; Personal Projects &mdash;</h2>
 
-        <h2>Personal Projects</h2>
+    {% for project in site.data.personal-projects %}
 
-        {% for project in site.data.personal-projects %}
+        <article>
 
-        <!-- Title -->
-        <h3>{{project.title}}</h3>
+            <!-- Title -->
+            <h3>{{project.title}}</h3>
 
-        <!-- Image -->
-        {% if project.image %}
-        <img class="personal-project--image" src="{{project.image}}"/>
-        {% endif %}
+            <!-- Image -->
+            {% if project.image %}
+            <img class="personal-project--image" src="{{project.image}}"/>
+            {% endif %}
 
-        <!-- Description -->
-        <p class="large-paragraph">
-            {{project.description}}
-        </p>
+            <!-- Description -->
+            <p class="large-paragraph">
+                {{project.description}}
+            </p>
 
-        <!-- Source code link -->
-        <a class="button" href="https://github.com/Jim-Eckerlein/{{project.github}}" target="_blank">
-            Source Code
-        </a>
+            <!-- Source code link -->
+            <a class="button" href="https://github.com/Jim-Eckerlein/{{project.github}}" target="_blank">
+                Source Code
+            </a>
 
-        <!-- Videos -->
-        {% if project.video %}
-        <video controls>
-            <source src="{{project.video}}" type="video/mp4">
-        </video>
-        {% endif %}
+            <!-- Videos -->
+            {% if project.video %}
+            <video controls>
+                <source src="{{project.video}}" type="video/mp4">
+            </video>
+            {% endif %}
 
-        <div class="spacer"></div>
+            <div class="spacer"></div>
 
-        {% endfor %}
+        </article>
 
-    </article>
+        <div class="divider"></div>
+
+    {% endfor %}
 
     <footer>
         <p>© 2020 {{site.data.profile.name}} &middot; Munich, Germany</p>
