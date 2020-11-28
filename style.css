@@ -112,30 +112,6 @@ footer {
     padding: 0;
 }
 
-.skills--definition {
-    font-size: 0.8em;
-    opacity: 0.6;
-}
-
-.skills--listing-entry {
-    font-weight: bold;
-}
-
-.skills--proficient .skills--listing-entry {
-    color: var(--accent-color);
-    font-weight: bold;
-}
-
-.skills--listing-entry:not(:last-child)::after {
-    content: ", ";
-    font-weight: normal;
-    color: var(--text-color);
-}
-
-.skills--listing-entry:nth-last-child(2)::after {
-    content: ", and ";
-}
-
 .portfolio--container {
     display: flex;
     align-items: flex-start;
