@@ -82,8 +82,11 @@ video {
 }
 
 footer {
+    font-size: 0.8em;
     padding: 16px;
     background-color: rgb(23, 24, 26);
+    display: flex;
+    justify-content: space-between;
 }
 
 .button {
@@ -194,6 +197,11 @@ footer {
 
     video {
         max-height: 256px;
+    }
+
+    footer {
+        flex-direction: column;
+        justify-content: space-between;
     }
 
     .portfolio--email-image {
