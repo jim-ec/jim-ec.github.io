@@ -39,8 +39,16 @@ a {
 article {
     display: block;
     width: 100%;
-    padding: 0 16%;
+    padding: 0 20%;
     box-sizing: border-box;
+}
+
+article.portfolio--container {
+    padding-right: 16%;
+}
+
+article.portfolio--container p {
+    font-weight: 400;
 }
 
 h1 {
@@ -59,7 +67,7 @@ h2 {
     font-size: 28px;
     font-weight: 300;
     text-transform: uppercase;
-    margin-bottom: 64px;
+    margin: 64px 0;
     color: var(--accent-color-secondary)
 }
 
