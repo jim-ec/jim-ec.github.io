@@ -180,16 +180,29 @@ footer {
     }
 
     h1 {
-        font-size: 56px;
+        font-size: 34px;
     }
 
     h2 {
-        font-size: 40px;
+        font-size: 18px;
         margin: 16px 0;
     }
 
     h3 {
-        font-size: 30px;
+        font-size: 24px;
+    }
+
+    video {
+        max-height: 256px;
+    }
+
+    .portfolio--email-image {
+        max-width: 256px;
+        max-height: 32px;
+    }
+
+    .large-paragraph {
+        text-align: initial;
     }
 
     .spacer {
