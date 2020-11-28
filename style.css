@@ -133,10 +133,19 @@ footer {
 }
 
 .portfolio--subtitle-links {
-    font-size: 24px;
     font-weight: 500;
     line-height: 32px;
     margin-top: 16px;
+}
+
+.portfolio--subtitle-links a {
+    margin-right: 10px;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.portfolio--subtitle-links a:not(:first-child) {
+    margin-left: 10px;
 }
 
 .portfolio--email-image {
