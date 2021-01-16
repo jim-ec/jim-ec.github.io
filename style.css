@@ -221,6 +221,10 @@ footer {
         max-height: 32px;
     }
 
+    article.portfolio--container {
+        padding-right: 16px;
+    }
+
     .large-paragraph {
         text-align: initial;
     }
