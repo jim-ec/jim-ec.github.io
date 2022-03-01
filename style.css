@@ -1,12 +1,12 @@
 
 :root {
-    --accent-color: #53e4c0;
-    --accent-color-secondary: #bff8ea;
-    --accent-color-link: rgb(129, 188, 255);
-    --text-color:  rgb(176, 176, 187);
-    --background-color: rgb(41, 42, 45);
-    --intro-color: rgb(24, 27, 32);
-    --footer-color: rgb(23, 24, 26);
+    --accent-color: #17e7b3;
+    --accent-color-secondary: #90d2d4;
+    --accent-color-link: rgb(87, 151, 224);
+    --text-color:  rgb(45, 45, 48);
+    --intro-color: rgb(255, 255, 255);
+    --background-color: rgb(255, 255, 255);
+    --footer-color: rgb(191, 193, 199);
     background-color: var(--background-color);
     color: var(--text-color);
 }
