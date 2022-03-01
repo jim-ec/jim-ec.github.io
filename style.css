@@ -5,6 +5,7 @@
     --accent-color-link: rgb(129, 188, 255);
     --text-color:  rgb(176, 176, 187);
     --background-color: rgb(41, 42, 45);
+    --footer-color: rgb(23, 24, 26);
     background-color: var(--background-color);
     color: var(--text-color);
 }
@@ -87,7 +88,7 @@ video {
 footer {
     font-size: 0.8em;
     padding: 16px;
-    background-color: rgb(23, 24, 26);
+    background-color: var(--footer-color);
     display: flex;
     justify-content: space-between;
 }
