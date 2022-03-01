@@ -141,9 +141,16 @@ footer {
     color: var(--accent-color);
 }
 
+.portfolio--email-image {
+    max-width: 256px;
+}
+
+.portfolio--introductory-text {
+    margin-top: 32px;
+}
+
 .portfolio--subtitle-links {
     font-weight: 500;
-    line-height: 32px;
     margin-top: 16px;
 }
 
@@ -155,14 +162,6 @@ footer {
 
 .portfolio--subtitle-links a:not(:first-child) {
     margin-left: 10px;
-}
-
-.portfolio--email-image {
-    max-width: 256px;
-}
-
-.portfolio--introductory-text {
-    margin-top: 32px;
 }
 
 .personal-project--image {
