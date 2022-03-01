@@ -36,18 +36,18 @@ a {
     color: var(--accent-color-link);
 }
 
-article {
+article, h2 {
     display: block;
     width: 100%;
     padding: 0 20%;
     box-sizing: border-box;
 }
 
-article.portfolio--container {
+.portfolio--container {
     padding-right: 16%;
 }
 
-article.portfolio--container p {
+.portfolio--container p {
     font-weight: 400;
 }
 
@@ -61,22 +61,18 @@ h1 {
 }
 
 h2 {
-    display: block;
-    width: 100%;
-    text-align: center;
-    font-size: 28px;
-    font-weight: 300;
+    font-size: 38px;
+    font-weight: 400;
     text-transform: uppercase;
-    margin: 64px 0;
+    margin-top: 128px;
+    margin-bottom: 64px;
     color: var(--accent-color-secondary)
 }
 
 h3 {
-    display: block;
-    width: 100%;
-    text-align: center;
-    font-size: 38px;
-    font-weight: 400;
+    font-size: 28px;
+    font-weight: 300;
+    display: inline;
     color: var(--accent-color);
 }
 
@@ -221,10 +217,6 @@ footer {
         max-height: 32px;
     }
 
-    article.portfolio--container {
-        padding-right: 16px;
-    }
-
     .large-paragraph {
         text-align: initial;
     }
@@ -236,6 +228,7 @@ footer {
     .portfolio--container {
         display: block;
         text-align: center;
+        padding-right: 16px;
     }
 
     .portfolio--picture {
