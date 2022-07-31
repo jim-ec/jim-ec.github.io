@@ -34,15 +34,13 @@ h6 {
 }
 
 p,
-li,
 a,
 b,
 i {
     font-family: 'Fira Sans', 'Arial', sans-serif;
 }
 
-p,
-li {
+p {
     line-height: 2.0;
     font-weight: 300;
 }
@@ -51,8 +49,7 @@ a {
     color: var(--accent-color-link);
 }
 
-article,
-h2 {
+article {
     display: block;
     width: 100%;
     padding: 0 20%;
@@ -69,64 +66,10 @@ h1 {
     font-weight: 400;
 }
 
-h2 {
-    font-size: 38px;
-    font-weight: 400;
-    text-transform: uppercase;
-    margin-top: 64px;
-    margin-bottom: 64px;
-    color: var(--accent-color-secondary)
-}
-
-h3 {
-    font-size: 28px;
-    font-weight: 300;
-    display: inline;
-    color: var(--accent-color);
-}
-
-video {
-    margin: 32px 0;
-    padding: 0;
-    max-height: 500px;
-    width: 100%;
-    background-color: #111;
-}
-
 footer {
     font-size: 0.8em;
     padding: 16px;
     background-color: var(--footer-color);
-    display: flex;
-    justify-content: space-between;
-}
-
-.button {
-    display: inline-block;
-    font-size: 16px;
-    text-decoration: none;
-    border: 1px solid var(--accent-color-link);
-    padding: 4px 16px;
-    margin: 8px;
-    border-radius: 32px;
-}
-
-.large-paragraph {
-    text-align: left;
-}
-
-.divider {
-    height: 1px;
-    width: 100%;
-    padding: 0;
-    margin: 32px 0;
-    background-color: rgb(194, 194, 194);
-}
-
-.spacer {
-    height: 64px;
-    width: 100%;
-    padding: 0;
 }
 
 .portfolio--container {
@@ -181,8 +124,7 @@ footer {
         padding: 0;
     }
 
-    article,
-    h2 {
+    article {
         padding: 16px;
     }
 
@@ -190,36 +132,8 @@ footer {
         font-size: 34px;
     }
 
-    h2 {
-        font-size: 18px;
-        margin-top: 16px;
-        margin-bottom: 16px;
-    }
-
-    h3 {
-        font-size: 24px;
-    }
-
-    video {
-        max-height: 256px;
-    }
-
-    p,
-    li {
+    p {
         line-height: 1.8;
-    }
-
-    footer {
-        flex-direction: column;
-        justify-content: space-between;
-    }
-
-    .large-paragraph {
-        text-align: initial;
-    }
-
-    .spacer {
-        height: 32px;
     }
 
     .portfolio--container {
