@@ -87,7 +87,7 @@ article p {
     color: var(--accent-color);
 }
 
-.portfolio--introductory-text {
+article p {
     margin-top: 32px;
 }
 
