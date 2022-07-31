@@ -127,13 +127,6 @@ footer {
     font-weight: 400;
 }
 
-.portfolio--picture {
-    width: min(140px, 20%);
-    height: auto;
-    padding-top: 16px;
-    padding-right: 64px;
-}
-
 .portfolio--first-name {
     font-weight: bold;
     color: var(--accent-color-secondary);
@@ -231,10 +224,6 @@ footer {
         display: block;
         text-align: center;
         padding-right: 16px;
-    }
-
-    .portfolio--picture {
-        padding: 16px 0;
     }
 
     .personal-project--image {
