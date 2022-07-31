@@ -155,12 +155,6 @@ footer {
     margin-left: 10px;
 }
 
-.personal-project--image {
-    width: 64px;
-    padding: 8px 16px 8px 0;
-    float: left;
-}
-
 @media screen and (max-width: 950px) {
     article {
         padding: 0 10%;
@@ -215,9 +209,5 @@ footer {
         display: block;
         text-align: center;
         padding-right: 16px;
-    }
-
-    .personal-project--image {
-        width: 52px;
     }
 }
