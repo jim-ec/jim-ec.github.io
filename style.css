@@ -18,6 +18,8 @@ html {
 body {
     margin: 0;
     padding: 0;
+    display: flex;
+    flex-direction: column;
 }
 
 div,
@@ -55,6 +57,7 @@ h2 {
     width: 100%;
     padding: 0 20%;
     box-sizing: border-box;
+    flex-grow: 1;
 }
 
 h1 {
