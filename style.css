@@ -136,10 +136,6 @@ footer {
     color: var(--accent-color);
 }
 
-.portfolio--email-image {
-    max-width: 256px;
-}
-
 .portfolio--introductory-text {
     margin-top: 32px;
 }
@@ -205,11 +201,6 @@ footer {
     footer {
         flex-direction: column;
         justify-content: space-between;
-    }
-
-    .portfolio--email-image {
-        max-width: 256px;
-        max-height: 32px;
     }
 
     .large-paragraph {
