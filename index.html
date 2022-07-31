@@ -2,6 +2,7 @@
 ---
 
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -20,15 +21,18 @@
     <meta name="theme-color" content="#ffffff">
 
     <!-- SEO -->
-    <meta name="author" content="Jim Eckerlein"/>
-    <meta name="keywords" content="Jim Eckerlein, Portfolio, Programmer"/>
-    <meta name="description" content="Programmer with crazy for C++ and computer graphics rendering. Currently studying Computer Science at the Technical University of Munich."/>
+    <meta name="author" content="Jim Eckerlein" />
+    <meta name="keywords" content="Jim Eckerlein, Portfolio, Programmer" />
+    <meta name="description"
+        content="Programmer with crazy for C++ and computer graphics rendering. Currently studying Computer Science at the Technical University of Munich." />
 
     <!-- Fonts -->
-    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700;900&family=Fira+Sans:wght@100;300;400;700&display=swap" rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700;900&family=Fira+Sans:wght@100;300;400;700&display=swap"
+        rel="stylesheet">
 
     <!-- Styles -->
-    <link rel="stylesheet" type="text/css" href="style.css"/>
+    <link rel="stylesheet" type="text/css" href="style.css" />
 
 </head>
 
@@ -75,36 +79,36 @@
 
     {% for project in site.data.personal-projects %}
 
-        <article>
+    <article>
 
-            <!-- Title -->
-            <h3>{{project.title}}</h3>
+        <!-- Title -->
+        <h3>{{project.title}}</h3>
 
-            <!-- Image -->
-            {% if project.image %}
-            <img class="personal-project--image" src="{{project.image}}"/>
-            {% endif %}
+        <!-- Image -->
+        {% if project.image %}
+        <img class="personal-project--image" src="{{project.image}}" />
+        {% endif %}
 
-            <!-- Description -->
-            <p class="large-paragraph">
-                {{project.description}}
-            </p>
+        <!-- Description -->
+        <p class="large-paragraph">
+            {{project.description}}
+        </p>
 
-            <!-- Source code link -->
-            <a class="button" href="https://github.com/Jim-Eckerlein/{{project.github}}" target="_blank">
-                Source Code
-            </a>
+        <!-- Source code link -->
+        <a class="button" href="https://github.com/Jim-Eckerlein/{{project.github}}" target="_blank">
+            Source Code
+        </a>
 
-            <!-- Videos -->
-            {% if project.video %}
-            <video controls>
-                <source src="{{project.video}}" type="video/mp4">
-            </video>
-            {% endif %}
+        <!-- Videos -->
+        {% if project.video %}
+        <video controls>
+            <source src="{{project.video}}" type="video/mp4">
+        </video>
+        {% endif %}
 
-            <div class="spacer"></div>
+        <div class="spacer"></div>
 
-        </article>
+    </article>
 
     {% endfor %}
 
@@ -113,4 +117,5 @@
         <p>No trackers, no cookies</p>
     </footer>
 </body>
+
 </html>
