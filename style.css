@@ -84,12 +84,12 @@ article p {
     font-weight: 400;
 }
 
-.portfolio--first-name {
+.first-name {
     font-weight: bold;
     color: var(--accent-color-secondary);
 }
 
-.portfolio--surname {
+.surname {
     color: var(--accent-color);
 }
 
