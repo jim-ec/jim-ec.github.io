@@ -47,6 +47,12 @@ p {
 
 a {
     color: var(--accent-color-link);
+    text-decoration: none;
+    font-weight: bold;
+}
+
+a:hover {
+    text-decoration: underline;
 }
 
 h1 {
@@ -91,18 +97,16 @@ article p {
     margin-top: 32px;
 }
 
-.portfolio--subtitle-links {
+.links {
     font-weight: 500;
     margin-top: 16px;
 }
 
-.portfolio--subtitle-links a {
+.links a {
     margin-right: 10px;
-    text-decoration: none;
-    font-weight: bold;
 }
 
-.portfolio--subtitle-links a:not(:first-child) {
+.links a:not(:first-child) {
     margin-left: 10px;
 }
 
