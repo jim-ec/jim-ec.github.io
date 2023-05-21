@@ -30,6 +30,7 @@
     background: var(--background-color);
     color: var(--text-color);
     font-family: 'Fira Sans', 'Arial', sans-serif;
+    cursor: default;
 }
 
 span {
@@ -90,6 +91,7 @@ a {
     display: inline;
     color: var(--accent-color-link);
     text-decoration: none;
+    cursor: pointer;
 }
 
 a:hover {
