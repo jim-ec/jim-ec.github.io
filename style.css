@@ -22,7 +22,6 @@
 
 * {
     all: unset;
-    overflow: hidden;
     box-sizing: border-box;
     display: block;
 }
@@ -46,6 +45,8 @@ body {
     display: flex;
     flex-direction: column;
     padding-top: 32px;
+    overflow-x: hidden;
+    overflow-y: scroll;
 }
 
 header {
