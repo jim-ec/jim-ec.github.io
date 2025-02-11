@@ -29,7 +29,7 @@
 :root {
     background: var(--background-color);
     color: var(--text-color);
-    font-family: 'Fira Sans', 'Arial', sans-serif;
+    font-family: "Fira Sans", "Arial", sans-serif;
     cursor: default;
 }
 
@@ -71,24 +71,18 @@ footer {
 
 h1 {
     padding: 48px 0;
-    font-family: 'Lato', 'Arial', sans-serif;
+    font-family: "Lato", "Arial", sans-serif;
     font-size: 4rem;
     letter-spacing: -0.2rem;
 }
 
-ul {
-    margin: 0;
-    padding: 0;
-}
-
-li {
-    list-style-type: none;
+p {
     line-height: 1.6;
-    padding-bottom: 24px;
+    padding: 16px 0;
 }
 
-li:last-of-type {
-    padding: 25px 0;
+.divider {
+    height: 32px;
 }
 
 a {
@@ -113,7 +107,6 @@ a:hover {
 }
 
 @media screen and (max-width: 900px) {
-
     main,
     header {
         padding: 0 10%;
@@ -121,7 +114,6 @@ a:hover {
 }
 
 @media screen and (max-width: 600px) {
-
     header {
         text-align: center;
     }
