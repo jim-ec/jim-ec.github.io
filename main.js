@@ -65,10 +65,9 @@ function draw() {
     canvas.height,
   );
 
-  const fps = 12;
   gl.uniform1f(
     gl.getUniformLocation(program, "u_time"),
-    Math.floor((fps * performance.now()) / 1000) / fps,
+    performance.now() / 1000,
   );
 
   gl.drawArrays(gl.TRIANGLES, 0, 3);
