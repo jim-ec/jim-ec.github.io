@@ -1,7 +1,5 @@
 .DS_Store
 
-cv.pdf
-
 ## Core latex/pdflatex auxiliary files:
 *.aux
 *.lof
