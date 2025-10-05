@@ -1,0 +1,141 @@
+\documentclass{article}
+\usepackage[utf8]{inputenc}
+\usepackage{geometry}
+\usepackage{paracol}
+\usepackage{lipsum}
+\usepackage{lmodern}
+\usepackage{hyperref}
+\renewcommand{\rmdefault}{lmss}
+
+\setlength{\columnsep}{20pt}
+\setcounter{secnumdepth}{-1}
+
+\geometry{
+  a4paper,
+  left=20mm,
+  right=20mm,
+  top=25mm,
+  bottom=25mm,
+}
+
+\hypersetup{
+    pdfborder={0 0 0},
+}
+
+\pagestyle{empty}
+
+\begin{document}
+
+{
+\centering
+{\huge \bfseries Jim Eckerlein}\par
+\vspace{0.6em}
+{\Large Software Engineer}\par
+\vspace{0.4em}
+{\today}\par
+\vspace{1.2em}
+}
+
+\begin{tabular}{rl}
+                    & Münster, Germany \\
+\textbf{Email}      & jim.eckerlein@proton.me \\
+\textbf{Web}        & \url{https://jimec.dev} \\
+\textbf{GitHub}     & \url{https://github.com/jim-ec} \\
+\textbf{LinkedIn}   & \url{https://www.linkedin.com/in/jim-ec} \\
+\end{tabular}
+
+\columnratio{0.61803398875}
+\begin{paracol}{2}
+
+\section{Experience}
+
+\subsection{GPU Software Engineer, UX3D GmbH}
+{\itshape January 2019 -- Present}
+
+\begin{itemize}
+\setlength\itemsep{0em}
+\item Development on Gestaltor, the company's product, using Qt and C++
+\item Engine and middleware development in C++, Vulkan,\\and OpenGL
+\item Add Draco Mesh Compression to the Blender glTF Exporter
+\item Implementation of a Full-stack SvelteKit App
+\item Development on a React App
+\item Customization of Unity's High-Fidelity Render Pipeline (HDRP)
+\item Various prototypes for several use-cases, mostly in Rust
+\end{itemize}
+
+\subsection{Software Developer, MBS Electronic Systems GmbH}
+{\itshape June 2017 -- December 2018}
+
+\begin{itemize}
+\setlength\itemsep{0em}
+\item Implementation of a PDF rendering widget in C++, QML, Qt Quick
+targeting an embedded device
+\item \href{https://jimec.dev/references/mbs-Electronics-GmbH.pdf}{\underline{Reference}}
+\end{itemize}
+
+\subsection{Trainee, ESR Labs GmbH}
+{\itshape September 2015 -- July 2016}
+
+\begin{itemize}
+\setlength\itemsep{0em}
+\item Implementation of CAN message sender and receiver on an Arduino
+device
+\item Construction of Hardware on which the software implementation is
+supposed to run on
+\item \href{https://jimec.dev/references/ESRLabs.pdf}{\underline{Reference}}
+\end{itemize}
+
+\section{Education}
+
+\subsection{Technical University of Munich}
+{\itshape October 2018 -- August 2023}
+
+\begin{itemize}
+\setlength\itemsep{0em}
+\item B.Sc. Computer Science
+\item Thesis: \href{https://jimec.dev/Thesis.pdf}{An Environment for Continuous Integration and Software Testing for sys-sage}
+\item Seminar work: \href{https://jimec.dev/C++%20Memory%20Model.pdf}{The Evolution of the C++ Memory Model}
+\end{itemize}
+
+\syncallcounters
+\switchcolumn
+
+\section{Skills}
+
+\begin{itemize}
+\setlength\itemsep{0em}
+\item C++, Rust
+\item JavaScript, TypeScript, React, \\Next, Svelte, SvelteKit
+\item Java, Kotlin
+\item WebGPU, Vulkan, OpenGL, Metal
+\item Swift, Android
+\item Haskell
+\end{itemize}
+
+\subsection{Langugages}
+
+\begin{itemize}
+\setlength\itemsep{0em}
+\item German, Czech (native)
+\item English (C1)
+\item Spanish (A2)
+\end{itemize}
+
+\section{Personal Projects}
+
+\subsection{4D Geometry Renderer}
+Implementing a Flutter App rendering a spatial slice of a draggable 4-D geometry.
+
+Features interactive rotation on the X-W plane, the resulting 3D slice is computed and rendered in real time.
+
+\href{https://github.com/Jim-Eckerlein/pentachoron}{\underline{Source Code}}
+
+\subsection{JavaScript mini IDE}
+Implementing an Android App featuring a JavaScript editor with syntax highlighting.
+
+The code is parsed in C++, the result passed back through the JNI. Features a built-in file explorer to persistently store scripts.
+
+\href{https://github.com/Jim-Eckerlein/javascript-mini-ide}{\underline{Source Code}}
+
+\end{paracol}
+\end{document}
