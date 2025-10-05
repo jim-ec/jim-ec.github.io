@@ -1,0 +1,136 @@
+@media (prefers-color-scheme: dark) {
+    :root {
+        --text-color: #b0b0bb;
+        --background-color: #181b20;
+        --footer-color: #010a12;
+        --accent-color: #53e4c0;
+        --accent-color-secondary: #bff8ea;
+        --accent-color-link: #81bcff;
+    }
+}
+
+@media (prefers-color-scheme: light) {
+    :root {
+        --text-color: #4f4f5c;
+        --background-color: #ebeef4;
+        --footer-color: #d1d7e1;
+        --accent-color: #28dbae;
+        --accent-color-secondary: #70dfc3;
+        --accent-color-link: #5a9ce6;
+    }
+}
+
+* {
+    all: unset;
+    box-sizing: border-box;
+    display: block;
+}
+
+canvas {
+    display: block;
+    width: 256px;
+    height: 256px;
+    margin: 32px auto;
+}
+
+:root {
+    background: var(--background-color);
+    color: var(--text-color);
+    font-family: "Fira Sans", "Arial", sans-serif;
+    cursor: default;
+}
+
+span {
+    display: inline;
+}
+
+head {
+    display: none;
+}
+
+html {
+    height: 100%;
+}
+
+body {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    padding-top: 32px;
+    overflow-x: hidden;
+    overflow-y: scroll;
+}
+
+header {
+    padding: 0 20%;
+}
+
+main {
+    flex-grow: 1;
+    padding: 0 20%;
+}
+
+footer {
+    padding: 32px;
+    font-size: 0.8rem;
+    background-color: var(--footer-color);
+}
+
+h1 {
+    padding: 48px 0;
+    font-family: "Lato", "Arial", sans-serif;
+    font-size: 4rem;
+    letter-spacing: -0.2rem;
+}
+
+p {
+    line-height: 1.6;
+    padding: 16px 0;
+}
+
+.divider {
+    height: 32px;
+}
+
+a {
+    display: inline;
+    color: var(--accent-color-link);
+    text-decoration: none;
+    cursor: pointer;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+.first-name {
+    font-weight: bold;
+    color: var(--accent-color-secondary);
+}
+
+.last-name {
+    font-weight: normal;
+    color: var(--accent-color);
+}
+
+@media screen and (max-width: 900px) {
+    main,
+    header {
+        padding: 0 10%;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    header {
+        text-align: center;
+    }
+
+    main {
+        padding: 16px;
+        text-align: center;
+    }
+
+    h1 {
+        font-size: 3rem;
+    }
+}
