@@ -9,22 +9,22 @@ jobs:
   build:
     runs-on: ubuntu-latest
     timeout-minutes: 10
+    container:
+      image: pandoc/latex
+      volumes:
+        .:/data
     steps:
       - name: Checkout repository
         uses: actions/checkout@v4
         with:
           fetch-depth: 0
-      - name: Install TeX Live
-        run: |
-          sudo apt-get update
-          sudo apt-get install -y texlive-full
       - name: Build PDF
         run: |
-          make -j$(nproc)
+          pdflatex -interaction=nonstopmode CV.tex
       - name: Deploy to GitHub Pages
         uses: peaceiris/actions-gh-pages@v4
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
-          publish_dir: cv
+          publish_dir: .
           keep_files: false
           enable_jekyll: false
