@@ -9,23 +9,19 @@ jobs:
   build:
     runs-on: ubuntu-latest
     timeout-minutes: 10
-    container:
-      image: pandoc/latex
-      # volumes:
-        # /:/data
     steps:
       - name: Checkout repository
         uses: actions/checkout@v4
         with:
           fetch-depth: 0
-      - name: Install Git
-        run: |
-          sudo apt-get update
-          sudo apt-get install -y git
+      # - name: Install Git
+      #   run: |
+      #     sudo apt-get update
+      #     sudo apt-get install -y git
       - name: Build PDF
-        run: |
-          tlmgr install paracol
-          pdflatex -interaction=nonstopmode CV.tex
+        uses: xu-cheng/latex-action@v4
+        with:
+          root_file: CV.tex
       - name: Deploy to GitHub Pages
         uses: peaceiris/actions-gh-pages@v4
         with:
