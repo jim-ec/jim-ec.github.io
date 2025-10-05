@@ -9,10 +9,10 @@ jobs:
   build:
     runs-on: ubuntu-latest
     timeout-minutes: 10
-    container:
-      image: pandoc/latex
-      volumes:
-        .:/data
+    # container:
+    #   image: pandoc/latex
+      # volumes:
+        # /:/data
     steps:
       - name: Checkout repository
         uses: actions/checkout@v4
