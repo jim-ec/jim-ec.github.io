@@ -14,13 +14,14 @@ jobs:
       # volumes:
         # /:/data
     steps:
-      - name: Install Git
-        run: |
-          apt install -yy git
       - name: Checkout repository
         uses: actions/checkout@v4
         with:
           fetch-depth: 0
+      - name: Install Git
+        run: |
+          sudo apt-get update
+          sudo apt-get install -y git
       - name: Build PDF
         run: |
           tlmgr install paracol
