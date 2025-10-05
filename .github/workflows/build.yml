@@ -20,6 +20,7 @@ jobs:
           fetch-depth: 0
       - name: Build PDF
         run: |
+          tlmgr install paracol
           pdflatex -interaction=nonstopmode CV.tex
       - name: Deploy to GitHub Pages
         uses: peaceiris/actions-gh-pages@v4
