@@ -16,7 +16,7 @@ jobs:
     steps:
       - name: Install Git
         run: |
-          apt-get install -yy git
+          apt install -yy git
       - name: Checkout repository
         uses: actions/checkout@v4
         with:
